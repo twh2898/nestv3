@@ -17,11 +17,13 @@ use super::error::*;
 pub enum DimensionMode {
 	/// The draw units are in pixels with the top left being the origin.
 	Pixel,
-	
+
 	/// The draw units are 0.0 - 1.0 with the center being the origin.
 	Raw,
 
-	/// Same as `Raw` except the top left is the origin and the X axis is scaled to match the window's aspect ratio. (ie. y = (0.0..1.0) and x = (0.0..aspect))
+	/// Same as `Raw` except the top left is the origin and the X axis is scaled
+	/// to match the window's aspect ratio. (ie. y = (0.0..1.0) and x =
+	/// (0.0..aspect))
 	Scaled,
 }
 
@@ -30,7 +32,7 @@ pub struct Window {
 	pub(crate) display: glium::Display,
 	pub(crate) col_shader: glium::Program,
 	pub(crate) tex_shader: glium::Program,
-	pub(crate) dim_mode: DimensionMode
+	pub(crate) dim_mode: DimensionMode,
 }
 
 impl Window {
