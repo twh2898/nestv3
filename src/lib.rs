@@ -10,16 +10,15 @@ mod window;
 mod frame;
 mod vertex;
 mod draw;
+mod texture;
 
 pub use window::*;
 pub use frame::*;
 pub use vertex::*;
 pub use draw::*;
+pub use texture::*;
 
 use std::time::Duration;
-
-/// Texture is the glum::texture that is currently being used, `SrgbTexture2d` or `Texture2d`.
-pub type Texture = glium::texture::SrgbTexture2d;
 
 /// Combines errors from multiple libraries into a single type for ease of use.
 mod error {
