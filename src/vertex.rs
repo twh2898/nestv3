@@ -21,12 +21,12 @@ impl From<([f64; 2], [f32; 4], [f32; 2])> for Vertex {
 	}
 }
 
-impl From<(f64, f64, f32, f32)> for Vertex {
-	fn from(data: (f64, f64, f32, f32)) -> Self {
+impl From<(f64, f64, [f32; 2])> for Vertex {
+	fn from(data: (f64, f64, [f32; 2])) -> Self {
 		Vertex {
 			position: [data.0, data.1],
 			color: [1.0; 4],
-			uvw: [data.2, data.3],
+			uvw: data.2,
 		}
 	}
 }

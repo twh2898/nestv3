@@ -109,7 +109,7 @@ impl<'a> Draw for Frame<'a> {
 			perspective: Into::<[[f32; 4]; 4]>::into(cgm::ortho(left, right, bottom, top, 0.0, 1.0)),
 			texture: glium::uniforms::Sampler::new(texture.as_ref())
 						.magnify_filter(glium::uniforms::MagnifySamplerFilter::Nearest)
-						.minify_filter(glium::uniforms::MinifySamplerFilter::NearestMipmapLinear)
+						.minify_filter(glium::uniforms::MinifySamplerFilter::NearestMipmapNearest)
 						.wrap_function(glium::uniforms::SamplerWrapFunction::Repeat),
 		};
 

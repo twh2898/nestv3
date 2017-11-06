@@ -11,10 +11,10 @@ fn main() {
 
 	// All vertex coordinates are in pixels
 	let points: Vec<Vertex> = vec![
-		(0.0, 0.0, 0.0, 0.0),
-		(0.0, 1.0, 0.0, 1.0),
-		(1.0, 0.0, 1.0, 0.0),
-		(1.0, 1.0, 1.0, 1.0),
+		(0.0, 0.0, [0.0, 0.0]),
+		(0.0, 1.0, [0.0, 1.0]),
+		(1.0, 0.0, [1.0, 0.0]),
+		(1.0, 1.0, [1.0, 1.0]),
 	].iter().map(|p| Into::<Vertex>::into(*p)).collect();
 
 	let mut running = true;
