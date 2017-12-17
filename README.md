@@ -7,7 +7,7 @@ Version 3 of the nest API https://github.com/nest-rs/nest
 Cargo.toml
 ```toml
 [dependencies]
-nest = { git = "https://github,com/twh2898/nestv3.git" }
+nest = { git = "https://github.com/twh2898/nestv3.git" }
 ```
 
 main.rs
