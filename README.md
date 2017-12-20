@@ -1,4 +1,4 @@
-# Next V3
+# Nest V3
 
 Version 3 of the nest API https://github.com/nest-rs/nest
 
